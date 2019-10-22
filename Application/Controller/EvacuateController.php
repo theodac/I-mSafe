@@ -10,6 +10,9 @@ class EvacuateController extends Framework
 {
     public function inscription(){
 
+        include_once MDL_PATH.'User/Users.php';
+        $user = new Users();
+        $user->test();
 
         $this->render('inscription',[]);
     }
