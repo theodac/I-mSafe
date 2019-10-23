@@ -28,7 +28,7 @@ class Framework
         define('ROOT', getcwd().DIRSEP);
         define('APPPATH',ROOT.'Application'.DIRSEP);
         define('FRAMEWORK_PATH',ROOT.'Framework'.DIRSEP);
-        define('PUB_PATH',dirname($_SERVER['SCRIPT_NAME']));
+        define('PUB_PATH',ROOT.'/public');
         define('CTRL_PATH', APPPATH. 'Controller'.DIRSEP);
         define('MDL_PATH', APPPATH. 'Model'.DIRSEP);
         define('VIEW_PATH', APPPATH. 'View'.DIRSEP);
@@ -79,11 +79,15 @@ class Framework
                 if ($getParamUrlArray[2] != "" && $getParamUrlArray[3] != "") {
                     if (file_exists(CTRL_PATH . CONTROLLER . "Controller.php")) {
                         $controllerName = CONTROLLER . "Controller";
-                        $actionName = ACTION;
+
 
 
                         $controller = new $controllerName;
-                        if (method_exists($controller, ACTION)) {
+                        var_dump(ACTION);
+                       $action =  explode('?',ACTION);
+                        var_dump($controller);
+                        $actionName = $action[0];
+                        if (method_exists($controller, $action[0])) {
                             var_dump('okl');
                             $controller->$actionName();
                         } else {

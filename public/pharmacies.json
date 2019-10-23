@@ -1,0 +1,140 @@
+[
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie Lafayette",
+    "address": "87 rue Lafayette",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.089280,
+        49.432390
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "La Grande Pharmacie",
+    "address": "Place de la Verrerie",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.083380,
+        49.431180
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie Lafayette du théâtre",
+    "address": "91 rue general leclerc",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.091310,
+        49.439650
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Duvey-Guivarch",
+    "address": "146 rue Saint-Sever",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.086610,
+        49.431330
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie/Orthopedie Mutualiste",
+    "address": "30 avenue de bretagne",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.085400,
+        49.434040
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie des Emmurees",
+    "address": "Rue saint-sever",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.088220,
+        49.433390
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Grande Pharmacie du centre",
+    "address": "29 place de la cathédrale",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.093710,
+        49.440570
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie Saint Marc",
+    "address": "1 rue Alsace Lorraine",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.100270,
+        49.438370
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  }
+
+]
