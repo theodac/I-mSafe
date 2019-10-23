@@ -48,7 +48,7 @@
 
             for (var i = 0; i < Object.keys(response.receptionStructures).length; i++){
                 var structure = response.receptionStructures[i];
-                L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup(structure.name + "<br> Capacité de " + structure.capacity + " personnes");
+                L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup("<a href='geo:"+ structure.coordinates.lat + "," + structure.coordinates.lng + "?q=" + structure.name + "'>" + structure.name + "</a> <br> Capacité de " + structure.capacity + " personnes");
             }
         }
     }
