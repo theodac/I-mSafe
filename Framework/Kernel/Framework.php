@@ -7,6 +7,8 @@
  */
 require_once './Application/Controller/IndexController.php';
 require_once './Application/Controller/EvacuateController.php';
+require_once './Application/Controller/UsersController.php';
+require_once './Application/Controller/SituationController.php';
 
 class Framework
 {
@@ -39,16 +41,16 @@ class Framework
 
             }
         }
+        define('API_URL','http://localhost:8888/');
     }
 
     private static function autoloader()
     {
-        var_dump(spl_autoload_register(array(__CLASS__,'load')));
+        //var_dump(spl_autoload_register(array(__CLASS__,'load')));
     }
 
     private static function load($classname){
-        var_dump($classname);
-        var_dump(substr($classname, -5) );
+
         // Here simply autoload app’s controller and model classes
 
         if (substr($classname, -10) == "Controller"){
@@ -84,7 +86,6 @@ class Framework
 
                         $controller = new $controllerName;
                         if (method_exists($controller, ACTION)) {
-                            var_dump('okl');
                             $controller->$actionName();
                         } else {
                             echo 'Marcheead pas';

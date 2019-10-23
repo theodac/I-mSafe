@@ -9,7 +9,10 @@
 
 <h2>Page choix Evacuation ou Confinement</h2>
 
+<form method="post">
+    <button type="submit" name="evacuation">Evacuation</button>
 
-<button>Evacuation</button>
 <br>
-<button>Confinement</button>
+
+    <button type="submit" name="confinement">Confinement</button>
+</form>

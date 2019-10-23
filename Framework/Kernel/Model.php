@@ -12,16 +12,11 @@ class Model
     private $bdd;
     private $chat;
     public function __construct(){
-
-        $strBddServeur = "localhost";
-        $strBddLogin = "root";
-        $strBddPassword = "123456";
-        $strBddBase = "groupe";
-
+        $strMsgBase = "imsafe";
 
         try{
-            $this->bdd = new PDO('mysql:host='.$strBddServeur.';dbname='.$strBddBase,$strBddLogin,$strBddPassword,array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-            $this->bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+            $this->chat = new PDO('pgsql:host=localhost;dbname='.$strMsgBase,'postgres','root',array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+            $this->chat->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
         }
@@ -83,5 +78,12 @@ class Model
     public function dernierIndex(){
         return $this->bdd->lastInsertId();
     }
+
+    public function requetePG($req){
+        $query = $this->chat->query($req);
+        return $query;
+
+    }
+
 
 }
