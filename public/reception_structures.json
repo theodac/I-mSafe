@@ -1,0 +1,49 @@
+{
+    "receptionStructures": {
+        "0": {
+            "name": "Square Verdrel",
+            "capacity": 1000,
+            "zip_code": "76000",
+            "coordinates": {
+                "lat": 49.4449368,
+                "lng": 1.0909456
+            }
+        },
+        "1": {
+            "name": "Église Sainte Jeanne d'Arc",
+            "capacity": 400,
+            "zip_code": "76000",
+            "coordinates": {
+                "lat": 49.4427594,
+                "lng": 1.0855338
+            }
+        },
+        "2": {
+            "name": "Jardin de l'Hôtel de Ville",
+            "capacity": 400,
+            "zip_code": "76000",
+            "coordinates": {
+                "lat": 49.4429103,
+                "lng": 1.0987368
+            }
+        },
+        "3": {
+            "name": "Lycée Gustave Flaubert",
+            "capacity": 1500,
+            "zip_code": "76044",
+            "coordinates": {
+                "lat": 49.4510657,
+                "lng": 1.1198701
+            }
+        },
+        "4": {
+            "name": "Lycée Blaise Pascal",
+            "capacity": 1500,
+            "zip_code": "76100",
+            "coordinates": {
+                "lat": 49.4328935,
+                "lng": 1.0836027
+            }
+        }
+    }
+}

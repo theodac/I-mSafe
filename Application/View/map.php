@@ -1,3 +1,4 @@
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <script src='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css' rel='stylesheet' />
 
@@ -28,14 +29,27 @@
 
     var map = L.mapbox.map('map')
         .setView([47, 1], 6)
-        .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11'));
-        
-    for (let i = 0; i < 10; i++) {
-        L.marker([(Math.random() * 6 + 43), (Math.random() * 5 + 0.4)]).addTo(map).bindPopup("Mon point n°" + i);
-    }
-
+        .addLayer(L.mapbox.styleLayer('mapbox://styles/mapbox/streets-v11')
+    );
+    
     function showPosition(position) {
         L.marker([position.coords.latitude, position.coords.longitude], {icon: user_icon}).addTo(map).bindPopup("Ma position");
     }
 
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', "/public/reception_structures.json", true);
+    xhr.send();
+
+    xhr.onreadystatechange = processRequest;
+ 
+    function processRequest(e) {
+        if (xhr.readyState == 4) {
+            var response = JSON.parse(xhr.responseText);
+
+            for (var i = 0; i < Object.keys(response.receptionStructures).length; i++){
+                var structure = response.receptionStructures[i];
+                L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup(structure.name + "<br> Capacité de " + structure.capacity + " personnes");
+            }
+        }
+    }
 </script>
