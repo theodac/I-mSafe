@@ -33,4 +33,9 @@ class ConfinementController extends Framework
         $this->render('success',[]);
 
     }
+
+    public function confinement(){
+
+        $this->render('confinementChoice',[]);
+    }
 }
