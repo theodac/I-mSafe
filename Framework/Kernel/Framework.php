@@ -43,16 +43,28 @@ class Framework
 
     private static function autoloader()
     {
-        spl_autoload_register(array(__CLASS__,'loading'));
+        var_dump(spl_autoload_register(array(__CLASS__,'load')));
     }
-    private static function loading($class)
-    {
-        if (substr($class,-10) == "Controller"){
-            require_once "Framework.php";
+
+    private static function load($classname){
+        var_dump($classname);
+        var_dump(substr($classname, -5) );
+        // Here simply autoload app’s controller and model classes
+
+        if (substr($classname, -10) == "Controller"){
+
+            // Controller
+
+            require_once  CTRL_PATH . "$classname.php";
+
+        } elseif (substr($classname, -5) == "Model"){
+
+            // Model
+
+            require_once  MDL_PATH . "$classname.php";
+
         }
-        elseif (substr($class,-5) == "Model"){
-            require_once "Framework.php";
-        }
+
     }
 
     private static function switcher()
@@ -63,11 +75,8 @@ class Framework
         if (count($getParamUrlArray) == 3 && $getParamUrlArray[2] == "") {
             include VIEW_PATH . "accueil.php";
         }else{
-            var_dump('pm');
             if (isset($getParamUrlArray[3])) {
-                var_dump('lol');
                 if ($getParamUrlArray[2] != "" && $getParamUrlArray[3] != "") {
-                    var_dump('ok');
                     if (file_exists(CTRL_PATH . CONTROLLER . "Controller.php")) {
                         $controllerName = CONTROLLER . "Controller";
                         $actionName = ACTION;

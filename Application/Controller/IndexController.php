@@ -9,6 +9,7 @@
 class IndexController extends Framework
 {
     public function index(){
+
         $this->render('choice',[]);
     }
 
