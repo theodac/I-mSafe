@@ -37,12 +37,30 @@
             }
         },
         "4": {
-            "name": "Lycée Blaise Pascal",
-            "capacity": 1500,
-            "zip_code": "76100",
+            "name": "Place du Boulingrin",
+            "capacity": 1200,
+            "zip_code": "76000",
             "coordinates": {
-                "lat": 49.4328935,
-                "lng": 1.0836027
+                "lat": 49.4471593,
+                "lng": 1.1042486
+            }
+        },
+        "5": {
+            "name": "Place Saint-Hilaire",
+            "capacity": 500,
+            "zip_code": "76000",
+            "coordinates": {
+                "lat": 49.4421162,
+                "lng": 1.1110661
+            }
+        },
+        "6": {
+            "name": "Complexe Sportif Antoine de Saint-Exupery",
+            "capacity": 1500,
+            "zip_code": "76000",
+            "coordinates": {
+                "lat": 49.4395783,
+                "lng": 1.1137092
             }
         }
     }
