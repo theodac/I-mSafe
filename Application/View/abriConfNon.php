@@ -45,7 +45,7 @@ require 'header.php';
 
 
             <section class="block-list">
-                <header>Points de rassemblement</header>
+                <header class="conf">Points de rassemblement</header>
                 <ul>
                     <li>
                         <p class="list-header">Lieu d'accueil</p>

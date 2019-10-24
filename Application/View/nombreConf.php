@@ -21,7 +21,7 @@ require 'header.php';
         </div>
 
         <div>
-            <a href="/abriConf" class="button buttonConf">Validez</a>
+            <a href="Confinement/abriConf" class="button buttonConf">Validez</a>
         </div>
     </div>
 

@@ -20,7 +20,7 @@ require 'header.php';
 
         <br>
 
-        <a href="confinement.php" class="button buttonConf">Confinement</a>
+        <a href="Confinement/numberConf" class="button buttonConf">Confinement</a>
 
 
 

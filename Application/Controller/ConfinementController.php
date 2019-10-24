@@ -9,29 +9,36 @@
 class ConfinementController extends Framework
 {
 
-    public function inscription(){
 
-        $this->render('inscription',[]);
+
+    public function numberConf(){
+
+        $this->render('nombreConf',[]);
+
     }
 
-    public function safe(){
 
-        $this->render('choice',[]);
+    public function abriConf(){
+
+        $this->render('abriConf',[]);
+
     }
 
-    public function secured(){
+    public function abriConfNon(){
 
-        $this->render('secured',[]);
+        $this->render('abriConfNon',[]);
+
     }
 
-    public function unsecured(){
+    public function abriConfOui(){
 
-        $this->render('unsecured',[]);
+        $this->render('nombreConfOui',[]);
+
     }
 
-    public function success(){
+    public function ValidConf(){
 
-        $this->render('success',[]);
+        $this->render('ValidConf',[]);
 
     }
 }

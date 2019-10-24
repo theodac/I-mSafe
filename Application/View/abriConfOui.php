@@ -17,7 +17,7 @@ require 'header.php';
         <div class="large-12 columns">
             <section class="block-list">
 
-                <header >Listes des survivants</header>
+                <header class="conf">Listes des survivants</header>
                 <br>
                 <br>
                 <ul>
