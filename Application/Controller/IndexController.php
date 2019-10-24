@@ -12,6 +12,7 @@ class IndexController extends Framework
         $file= PUB_PATH."/pharmacies.json";
         $csv= file_get_contents($file);
         $csv = json_decode($csv);
+        // Changer en GPS recupéré de l'utilisateur
         $mylat = 49.441530;
         $myLong= 1.093110;
         $teste = [];

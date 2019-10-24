@@ -85,7 +85,6 @@ class Framework
                         $controller = new $controllerName;
                         var_dump(ACTION);
                        $action =  explode('?',ACTION);
-                        var_dump($controller);
                         $actionName = $action[0];
                         if (method_exists($controller, $action[0])) {
                             var_dump('okl');
