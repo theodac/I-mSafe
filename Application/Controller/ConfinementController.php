@@ -8,6 +8,7 @@
 
 class ConfinementController extends Framework
 {
+
     public function inscription(){
 
         $this->render('inscription',[]);
