@@ -46,17 +46,26 @@ require 'header.php';
 
             <section class="block-list">
                 <header>Points de rassemblement</header>
-                <ul>
+
+                    <?php
+                    foreach ($rassembly as $rassemble){
+                    ?>
+                <ul style="border-bottom: 1px solid black">
                     <li>
-                        <p class="list-header">Lieu d'accueil</p>
+                        <p class="list-header"><?= $rassemble->name ?></p>
                     </li>
                     <li>
-                        <p class="list-header">Gérant</p>
+                        <p class="list-header">Gérant : <?= $rassemble->owner ?></p>
                     </li>
                     <li>
-                        <p class="list-header">Numéro de téléphone</p>
+                        <p class="list-header">Numéro de téléphone: 0<?= $rassemble->phone ?></p>
                     </li>
                 </ul>
+                    <?php
+                    }
+
+                    ?>
+
             </section>
         </div>
     </div>
@@ -67,7 +76,7 @@ require 'header.php';
     </div>
     <div class="small-5 columns">
         <br>
-        <a href="Evacuate/AbriOui" class="button buttonevac">Je suis en sécurité</a>
+        <a href="/imSafe/Evacuate/AbriOui" class="button buttonevac">Je suis en sécurité</a>
     </div>
 </div>
 

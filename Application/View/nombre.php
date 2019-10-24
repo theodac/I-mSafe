@@ -13,16 +13,17 @@ require 'header.php';
 
 
         <h3 class="subheader">Combien êtes-vous ? </h3>
+        <form action="/imSafe/Evacuate/abri" method="post">
 
         <div align="center">
-
-            <input id="number" type="number" value="2" align="center" style="width: 60% !important;">
+            <input id="number" type="number" value="2" align="center" name="number" style="width: 60% !important;">
 
         </div>
 
         <div>
-            <a href="/abri" class="button buttonevac">Validez</a>
+            <button type="submit" class="button buttonevac">Validez</button>
         </div>
+        </form>
     </div>
 
 </div>

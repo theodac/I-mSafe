@@ -43,12 +43,11 @@ class Framework
 
     private static function autoloader()
     {
-        var_dump(spl_autoload_register(array(__CLASS__,'load')));
+       spl_autoload_register(array(__CLASS__,'load'));
     }
 
     private static function load($classname){
-        var_dump($classname);
-        var_dump(substr($classname, -5) );
+
         // Here simply autoload app’s controller and model classes
 
         if (substr($classname, -10) == "Controller"){
@@ -83,11 +82,9 @@ class Framework
 
 
                         $controller = new $controllerName;
-                        var_dump(ACTION);
                        $action =  explode('?',ACTION);
                         $actionName = $action[0];
                         if (method_exists($controller, $action[0])) {
-                            var_dump('okl');
                             $controller->$actionName();
                         } else {
                             echo 'Marcheead pas';

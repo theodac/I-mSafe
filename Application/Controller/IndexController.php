@@ -17,11 +17,11 @@ class IndexController extends Framework
         $myLong= 1.093110;
         $teste = [];
         foreach ($csv as $json){
-            $url = "https://route.api.here.com/routing/7.2/calculateroute.json?waypoint0=$mylat%2C$myLong&waypoint1=".$json->fields->coordinates[1]."%2C".$json->fields->coordinates[0]."&mode=fastest%3Bpedestrian&app_id=tImiZCCScS7B2KxD6mBE&app_code=-vR7CIddMnECkiw_Z56jeg";
-            $url = file_get_contents($url);
 
-            $url = json_decode($url);
-            if($url->response->route[0]->summary->distance < 1000){
+           $distance =  $this->get_distance_m($mylat,$myLong,$json->fields->coordinates[1],$json->fields->coordinates[0]);
+
+            $url = (object) [];
+            if($distance < 1000){
                 $url->name = $json->name;
                 $url->addressOrigin = $json->address;
                 $url->lat = $json->fields->coordinates[1];
@@ -37,6 +37,18 @@ class IndexController extends Framework
 
         $this->render('choice',['pharmacy' => $teste]);
     }
-
+    function get_distance_m($lat1, $lng1, $lat2, $lng2) {
+        $earth_radius = 6378137;   // Terre = sphère de 6378km de rayon
+        $rlo1 = deg2rad($lng1);
+        $rla1 = deg2rad($lat1);
+        $rlo2 = deg2rad($lng2);
+        $rla2 = deg2rad($lat2);
+        $dlo = ($rlo2 - $rlo1) / 2;
+        $dla = ($rla2 - $rla1) / 2;
+        $a = (sin($dla) * sin($dla)) + cos($rla1) * cos($rla2) * (sin($dlo) * sin(
+                    $dlo));
+        $d = 2 * atan2(sqrt($a), sqrt(1 - $a));
+        return ($earth_radius * $d);
+    }
 
 }

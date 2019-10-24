@@ -10,10 +10,8 @@
 <h2>Page choix Evacuation ou Confinement</h2>
 
 
-<button>Evacuation</button>
-<br>
-<button>Confinement</button>
-<h3>Lieux de confinement près de vous</h3>
+
+<h3>Lieux de rassemblement près de vous</h3>
 <ul>
     <?php
     foreach ($pharmacy as $pharma){
