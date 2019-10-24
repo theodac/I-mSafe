@@ -81,11 +81,10 @@ class Framework
                 if ($getParamUrlArray[2] != "" && $getParamUrlArray[3] != "") {
                     if (file_exists(CTRL_PATH . CONTROLLER . "Controller.php")) {
                         $controllerName = CONTROLLER . "Controller";
-                        $actionName = ACTION;
-
-
                         $controller = new $controllerName;
-                        if (method_exists($controller, ACTION)) {
+                        $action =  explode('?',ACTION);
+                        $actionName = $action[0];
+                        if (method_exists($controller, $actionName)) {
                             $controller->$actionName();
                         } else {
                             echo 'Marcheead pas';

@@ -24,6 +24,10 @@ class UsersController extends Framework
     }
 
     public function redirectChoice(){
+        if(isset($_GET['send'])){
+            $_SESSION['nbr_personne']=$_POST['nbr_personne'];
+            header('Location:'. API_URL.'I-mSafe/situation/create ');
+        }
         $this->render('groupe');
     }
 
