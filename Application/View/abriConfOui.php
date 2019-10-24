@@ -82,7 +82,7 @@ require 'header.php';
             <div class="small-7 columns">
             </div>
             <div class="small-5 columns">
-                <a href="Evacuate/Validation" class="button buttonevac">Validez</a>
+                <a href="Evacuate/Validation" class="button buttonConf">Validez</a>
             </div>
         </div>
     </form>

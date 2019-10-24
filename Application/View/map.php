@@ -2,15 +2,20 @@
 <script src='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.js'></script>
 <link href='https://api.mapbox.com/mapbox.js/v3.2.1/mapbox.css' rel='stylesheet' />
 
-<div id="map"></div>
+
+
+<div id="map" class="small-6 columns" align="center"></div>
+
+
 
 <style>
     body {
         margin: 0;
     }
     #map {
-        width: 100vw;
-        height: 100vh;
+
+        width: 100%;
+        height: 60%;
         margin: 0;
     }
     
@@ -22,7 +27,7 @@
     L.mapbox.accessToken = 'pk.eyJ1IjoidGhvbWFzbTIiLCJhIjoiY2pvZWZjY2ZwMDA0NjNwcGNpaDVmcnExeCJ9.VL9YSAf4gaGpAJ3-tPtJgg';
 
     var user_icon = L.icon({
-        iconUrl: '/public/marker.svg',
+        iconUrl: '/I-mSafe/public/marker.svg',
         iconSize: [40],
         iconAnchor: [20, 60]
     });
@@ -37,7 +42,7 @@
     }
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "/public/reception_structures.json", true);
+    xhr.open('GET', "/I-mSafe/public/reception_structures.json", true);
     xhr.send();
 
     xhr.onreadystatechange = processRequest;

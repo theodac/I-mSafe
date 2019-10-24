@@ -21,7 +21,7 @@ require 'header.php';
         </div>
 
         <div>
-            <a href="abri.php" class="button buttonevac">Validez</a>
+            <a href="/abri" class="button buttonevac">Validez</a>
         </div>
     </div>
 

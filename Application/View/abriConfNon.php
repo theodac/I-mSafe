@@ -67,7 +67,7 @@ require 'header.php';
     </div>
     <div class="small-5 columns">
         <br>
-        <a href="Evacuate/AbriOui" class="button buttonevac">Je suis en sécurité</a>
+        <a href="Evacuate/AbriOui" class="button buttonConf">Je suis en sécurité</a>
     </div>
 </div>
 
