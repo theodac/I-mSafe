@@ -17,24 +17,31 @@ class EvacuateController extends Framework
         $this->render('inscription',[]);
     }
 
-    public function safe(){
+    //renvoi la vue pour compter evacuation
+    public function number(){
+        $this->render('nombre', []);
 
-        $this->render('safe',[]);
     }
 
-    public function secured(){
-
-        $this->render('secured',[]);
+    //renvoi la vue pour abri evacuation
+    public function abri(){
+        $this->render('abri', []);
     }
 
-    public function unsecured(){
-
-        $this->render('unsecured',[]);
+    public function abriOui(){
+        $this->render('AbriOui', []);
     }
-    public function success(){
 
-        $this->render('success',[]);
+    public function abriNon(){
+        $this->render('AbriNon', []);
+    }
 
+    public function validation(){
+        $this->render('Validation', []);
+    }
+
+    public function map(){
+        $this->render('map', []);
     }
 
 }

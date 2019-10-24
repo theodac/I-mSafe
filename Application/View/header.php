@@ -74,6 +74,12 @@
             text-transform: uppercase;
         }
 
+        .conf {
+
+            background-color: #A3E0F9 !important;
+
+        }
+
         .block-list li {
             position: relative;
             border-bottom: 1px solid #e6e6e6;

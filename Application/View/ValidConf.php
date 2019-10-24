@@ -24,7 +24,7 @@ require 'header.php';
 
         <div class="large-12 columns">
             <section class="block-list">
-                <header ><h6>QUELQUES CONSIGNES DE SECURITE</h6></header>
+                <header class="conf"><h6>QUELQUES CONSIGNES DE SECURITE</h6></header>
             </section>
 
             <section class="block-list">

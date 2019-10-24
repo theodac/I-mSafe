@@ -16,11 +16,11 @@ require 'header.php';
 
 
 
-        <h2 class="subheader"><a href="nombre.php" class="button buttonevac" >Evacuation</a></h2>
+        <h2 class="subheader"><a href="Evacuate/number" class="button buttonevac" >Evacuation</a></h2>
 
         <br>
 
-        <a href="confinement.php" class="button buttonConf">Confinement</a>
+        <a href="Confinement/numberConf" class="button buttonConf">Confinement</a>
 
 
 
