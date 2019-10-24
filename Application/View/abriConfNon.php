@@ -11,7 +11,7 @@ require 'header.php';
 <div class="test" style="height: 15%">
     <div class="row column text-center">
 
-        <h3 class="subheader">Trouvez un point de rassemblement </h3>
+        <h4 class="subheader">Trouvez un point de rassemblement </h4>
 
     </div>
 </div>
