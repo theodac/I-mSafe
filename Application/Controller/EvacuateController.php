@@ -19,6 +19,7 @@ class EvacuateController extends Framework
 
     //renvoi la vue pour compter evacuation
     public function number(){
+        $_SESSION['type'] = 'Evacuation';
         if(!isset($_SESSION['uuid'])){
         $client = new GuzzleHttp\Client();
         $client = $client->post('http://localhost:3000/api/users/add',[
@@ -84,6 +85,18 @@ class EvacuateController extends Framework
             }
         }
         if(isset($_GET['person']) && $_GET['person']){
+
+            $file = PUB_PATH."/reception_structures.json";
+
+            $json = json_decode(file_get_contents($file),true);
+
+            $json['receptionStructures'][$_GET['id']]['capacity'] = $json['receptionStructures'][$_GET['id']]['capacity'] - $_GET['person']  ;
+
+            $fp = fopen($file, 'w');
+            fwrite($fp, json_encode($json));
+            fclose($fp);
+
+
             $client = new GuzzleHttp\Client();
             $client->get('https://platform.clickatell.com/messages/http/send?apiKey=HHlPhOXSTcSJvQxv3KeuFg==&to=33'.$_GET['phone'].'&content=Un groupe de '.$_GET['person'].' personnes est en route vers votre refuge');
         }

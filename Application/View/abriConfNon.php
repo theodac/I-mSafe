@@ -45,18 +45,24 @@ require 'header.php';
 
 
             <section class="block-list">
-                <header class="conf">Points de rassemblement</header>
-                <ul>
-                    <li>
-                        <p class="list-header">Lieu d'accueil</p>
-                    </li>
-                    <li>
-                        <p class="list-header">Gérant</p>
-                    </li>
-                    <li>
-                        <p class="list-header">Numéro de téléphone</p>
-                    </li>
-                </ul>
+                <header class="conf">Points de rassemblement a moins de 1 km</header>
+                <?php
+                foreach ($confinements as $conf) {
+                    ?>
+                    <ul style="border-bottom: 1px solid black">
+                        <li>
+                            <p class="list-header">Lieu d'accueil : <?= $conf->name;?></p>
+                        </li>
+                        <li>
+                            <p class="list-header">Distance : <?= $conf->distance ?> Mètres </p>
+                        </li>
+                        <li>
+                            <p class="list-header">Adresse : <?= $conf->addressOrigin?></p>
+                        </li>
+                    </ul>
+                    <?php
+                }
+                ?>
             </section>
         </div>
     </div>
@@ -67,7 +73,7 @@ require 'header.php';
     </div>
     <div class="small-5 columns">
         <br>
-        <a href="Evacuate/AbriOui" class="button buttonConf">Je suis en sécurité</a>
+        <a href="/imSafe/Confinement/AbriConfOui" class="button buttonConf">Je suis en sécurité</a>
     </div>
 </div>
 

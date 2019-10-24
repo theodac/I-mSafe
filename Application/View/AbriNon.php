@@ -45,7 +45,7 @@ require 'header.php';
 
 
             <section class="block-list">
-                <header>Points de rassemblement</header>
+                <header>Points de rassemblement a moins de 1 km</header>
 
                     <?php
                     foreach ($rassembly as $rassemble){

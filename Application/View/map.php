@@ -40,9 +40,18 @@
     function showPosition(position) {
         L.marker([position.coords.latitude, position.coords.longitude], {icon: user_icon}).addTo(map).bindPopup("Ma position");
     }
+    var type = "<?= $_SESSION['type']?>";
 
-    place_reception_structures()
-    place_pharmacies()
+        if(type === "Evacuation"){
+            place_reception_structures()
+
+        }else{
+            place_pharmacies()
+
+        }
+
+
+
 
     // Reception structures markers placement
     function place_reception_structures() {
@@ -58,7 +67,7 @@
                     var structure = response.receptionStructures[i];
                     var nbr = <?= $_SESSION['number']; ?> ;
 
-                    L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup("<a href='geo:"+ structure.coordinates.lat + "," + structure.coordinates.lng + "?q=" + structure.name + "'>" + structure.name + "</a> <br> Capacité de " + structure.capacity + " personnes <a href=\"?person=" + nbr + "&phone=" + structure.phone+ " \" >Click here to text us!</a>");
+                    L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup("<a href='geo:"+ structure.coordinates.lat + "," + structure.coordinates.lng + "?q=" + structure.name + "'>" + structure.name + "</a> <br> Capacité de " + structure.capacity + " personnes <a href=\"?person=" + nbr + "&phone=" + structure.phone+ "&id="+i+" \" >Click here to text us!</a>");
                 }
             }
         }
@@ -76,7 +85,7 @@
 
                 for (var i = 0; i < response.length; i++){
                     var pharmacy = response[i];
-                    L.marker([pharmacy.fields.coordinates[1], pharmacy.fields.coordinates[0]]).addTo(map).bindPopup("<a href='geo:"+ pharmacy.fields.coordinates[1] + "," + pharmacy.fields.coordinates[0] + "?q=" + pharmacy.name + "'>" + pharmacy.name + "</a>  ");
+                    L.marker([pharmacy.fields.coordinates[1], pharmacy.fields.coordinates[0]]).addTo(map).bindPopup("<a href='http://www.google.com/maps/place/"+ pharmacy.fields.coordinates[1] + "," + pharmacy.fields.coordinates[0] + "'>" + pharmacy.name + "</a>  ");
                 }
             }
         }

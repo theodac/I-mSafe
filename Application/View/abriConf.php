@@ -17,7 +17,7 @@ require 'header.php';
 
         <br>
 
-        <a href="Confinement/AbriConfOui" class="button buttonConf">OUI </a><a href="Confinement/AbriConfNon" class="button buttonConf">NON</a>
+        <a href="/imSafe/Confinement/AbriConfOui" class="button buttonConf">OUI </a><a href="/imSafe/Confinement/AbriConfNon" class="button buttonConf">NON</a>
 
     </div>
 </div>

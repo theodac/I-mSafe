@@ -13,11 +13,11 @@ require 'header.php';
 <div class="nombre">
 
 
-    <form>
+    <form action="/imSafe/Confinement/ValidConf" method="post">
         <div class="large-12 columns">
             <section class="block-list">
 
-                <header class="conf">Listes des survivants</header>
+                <header  class="conf">Listes des survivants</header>
                 <br>
                 <br>
                 <ul>
@@ -25,13 +25,34 @@ require 'header.php';
                         <div class="medium-6 cell">
                             <br>
                             <label>Nom
-                                <input type="text" placeholder="Nom">
+                                <input type="text" placeholder="Nom" name="name">
                             </label>
                         </div>
                         <div class="medium-6 cell">
                             <br>
                             <label>Prénom
-                                <input type="text" placeholder="Prénom">
+                                <input type="text" placeholder="Prénom" name="firstname">
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="medium-6 cell">
+                            <br>
+                            <label>Adresse
+                                <input type="text" placeholder="Adresse" name="address">
+                            </label>
+                        </div> <div class="medium-6 cell">
+                            <br>
+                            <label>Ville
+                                <input type="text" placeholder="Vile" name="city">
+                            </label>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="medium-6 cell">
+                            <br>
+                            <label>Code Postal
+                                <input type="text" placeholder="Code Postal" name="zip">
                             </label>
                         </div>
                     </li>
@@ -53,7 +74,7 @@ require 'header.php';
                 <br>
                 <br>
                 <br>
-                <select  class="small-6 columns">
+                <select  class="small-6 columns" name="nbrChild">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -67,7 +88,7 @@ require 'header.php';
                 <p> Bébé(s) (jusqu'à deux ans)</p>
             </div>
             <div class="small-6 columns">
-                <select  class="small-6 columns">
+                <select  class="small-6 columns" name="nbrbaby">
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -82,7 +103,7 @@ require 'header.php';
             <div class="small-7 columns">
             </div>
             <div class="small-5 columns">
-                <a href="Evacuate/Validation" class="button buttonConf">Validez</a>
+                <button type="submit" class="button buttonConf">Validez</button>
             </div>
         </div>
     </form>
