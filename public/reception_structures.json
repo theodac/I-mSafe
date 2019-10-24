@@ -62,6 +62,15 @@
                 "lat": 49.4395783,
                 "lng": 1.1137092
             }
+        },
+        "7": {
+            "name": "Le centre Pompidou",
+            "capacity": 1500,
+            "zip_code": "75004",
+            "coordinates": {
+                "lat": 48.8606455,
+                "lng": 2.3500563
+            }
         }
     }
 }
