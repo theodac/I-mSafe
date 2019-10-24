@@ -41,20 +41,43 @@
         L.marker([position.coords.latitude, position.coords.longitude], {icon: user_icon}).addTo(map).bindPopup("Ma position");
     }
 
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', "/I-mSafe/public/reception_structures.json", true);
-    xhr.send();
+    place_reception_structures()
+    place_pharmacies()
+    
+    // Reception structures markers placement
+    function place_reception_structures() {
+        var reception_structures = new XMLHttpRequest();
+        reception_structures.open('GET', "/I-mSafe/public/reception_structures.json", true);
+        reception_structures.send();
+        reception_structures.onreadystatechange = processRequest;
+        function processRequest(e) {
+            if (reception_structures.readyState == 4) {
+                var response = JSON.parse(reception_structures.responseText);
 
-    xhr.onreadystatechange = processRequest;
- 
-    function processRequest(e) {
-        if (xhr.readyState == 4) {
-            var response = JSON.parse(xhr.responseText);
-
-            for (var i = 0; i < Object.keys(response.receptionStructures).length; i++){
-                var structure = response.receptionStructures[i];
-                L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup("<a href='geo:"+ structure.coordinates.lat + "," + structure.coordinates.lng + "?q=" + structure.name + "'>" + structure.name + "</a> <br> Capacité de " + structure.capacity + " personnes");
+                for (var i = 0; i < Object.keys(response.receptionStructures).length; i++){
+                    var structure = response.receptionStructures[i];
+                    L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup("<a href='geo:"+ structure.coordinates.lat + "," + structure.coordinates.lng + "?q=" + structure.name + "'>" + structure.name + "</a> <br> Capacité de " + structure.capacity + " personnes");
+                }
             }
         }
     }
+    
+    // Pharmacies markers placement
+    function place_pharmacies() {
+        var pharmacies = new XMLHttpRequest();
+        pharmacies.open('GET', "/I-mSafe/public/pharmacies.json", true);
+        pharmacies.send();
+        pharmacies.onreadystatechange = processRequest;
+        function processRequest(e) {
+            if (pharmacies.readyState == 4) {
+                var response = JSON.parse(pharmacies.responseText);
+                
+                for (var i = 0; i < response.length; i++){
+                    var pharmacy = response[i];
+                    L.marker([pharmacy.fields.coordinates[1], pharmacy.fields.coordinates[0]]).addTo(map).bindPopup("<a href='geo:"+ pharmacy.fields.coordinates[1] + "," + pharmacy.fields.coordinates[0] + "?q=" + pharmacy.name + "'>" + pharmacy.name + "</a>");
+                }
+            }
+        }
+    }
+
 </script>
