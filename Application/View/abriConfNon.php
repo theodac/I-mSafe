@@ -11,7 +11,7 @@ require 'header.php';
 <div class="test" style="height: 15%">
     <div class="row column text-center">
 
-        <h3 class="subheader">Trouvez un point de rassemblement </h3>
+        <h3 class="subheader">Selectionnez votre point de rassemblement pour réserver vos places</h3>
 
     </div>
 </div>
@@ -19,9 +19,7 @@ require 'header.php';
 <div class="nombre">
 
     <div class="row medium-uncollapse large-collapse">
-        <div class="small-6 columns">
-            <h5>Selectionnez votre point de rassemblement pour réserver vos places</h5>
-        </div>
+
 
 
         <?php
