@@ -24,9 +24,9 @@ require 'header.php';
                     <li>
                         <div class="medium-6 cell">
                             <br>
-                            <label>Nom
+                            <label>Nom</label>
                                 <input type="text"  name="name">
-                            </label>
+
                         </div>
                         <div class="medium-6 cell">
                             <br>
@@ -52,7 +52,7 @@ require 'header.php';
                         <div class="medium-6 cell">
                             <br>
                             <label>Code Postal
-                                <input type="text"  name="zip">
+                                <input type="text"  name="zip" style="width:50%">
                             </label>
                         </div>
                     </li>
