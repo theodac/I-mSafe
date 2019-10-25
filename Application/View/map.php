@@ -33,7 +33,7 @@
         L.mapbox.accessToken = 'pk.eyJ1IjoidGhvbWFzbTIiLCJhIjoiY2pvZWZjY2ZwMDA0NjNwcGNpaDVmcnExeCJ9.VL9YSAf4gaGpAJ3-tPtJgg';
 
         var user_icon = L.icon({
-            iconUrl: '/I-mSafe/public/marker.svg',
+            iconUrl: '/ImSafe/public/marker.svg',
             iconSize: [40],
             iconAnchor: [20, 60]
         });
@@ -44,8 +44,13 @@
         );
         L.marker([position.coords.latitude, position.coords.longitude], {icon: user_icon}).addTo(map).bindPopup("Ma position");
 
+        var type = "<?= $_SESSION['type'];?>";
+
+        if(type === "Evacuation"){
         place_reception_structures(position, map)
+        }else{
         place_pharmacies(position, map)
+        }
     }
     
     // placeMarkers()
@@ -53,7 +58,7 @@
     // Reception structures markers placement
     function place_reception_structures(position, map) {
         var reception_structures = new XMLHttpRequest();
-        reception_structures.open('GET', "/I-mSafe/public/reception_structures_list.json", true);
+        reception_structures.open('GET', "/ImSafe/public/reception_structures_list.json", true);
         reception_structures.send();
         reception_structures.onreadystatechange = processRequest;
         function processRequest(e) {
@@ -63,13 +68,13 @@
                 for (var i = 0; i < response.length; i++){
                     var structure = response[i];
                     
-                    var nbr = <?= $_SESSION['number']; ?>
-                    let max_lat_distance = 0.00909090909090909
-                    let max_lng_distance = 0.009009009009009009
+                    var nbr = <?= $_SESSION['number']; ?>;
+                    let max_lat_distance = 10.00909090909090909;
+                    let max_lng_distance = 10.009009009009009009;
 
                     let result = filter_distance(position.coords.latitude, position.coords.longitude, structure.coordinates.lat, structure.coordinates.lng, max_lng_distance, max_lat_distance)
                     if (result == false) { continue; }
-                    L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup("<a href='geo:"+ structure.coordinates.lat + "," + structure.coordinates.lng + "?q=" + structure.name + "'>" + structure.name + "</a> <br> Capacité de " + structure.capacity + " personnes <a href=\"?person=" + nbr + "&phone=" + structure.phone+ " \" >Cliquez ici pour réserver votre place</a>");
+                    L.marker([structure.coordinates.lat, structure.coordinates.lng]).addTo(map).bindPopup("<a href='http://www.google.com/maps/place/"+ structure.coordinates.lat + "," + structure.coordinates.lng + "?q=" + structure.name + "'>" + structure.name + "</a> <br> Capacité de " + structure.capacity + " personnes <a href=\"?person=" + nbr + "&phone=" + structure.phone+ "&id="+i+" \" >Cliquez ici pour réserver votre place</a>");
                 }
             }
         }
@@ -78,7 +83,7 @@
     // Pharmacies markers placement
     function place_pharmacies(position, map) {
         var pharmacies = new XMLHttpRequest();
-        pharmacies.open('GET', "/I-mSafe/public/pharmacies.json", true);
+        pharmacies.open('GET', "/ImSafe/public/pharmacies.json", true);
         pharmacies.send();
         pharmacies.onreadystatechange = processRequest;
         function processRequest(e) {

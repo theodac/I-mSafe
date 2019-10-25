@@ -8,7 +8,18 @@
     <title>Safe Place</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="../../public/style/style.css">
+    <script LANGUAGE="JavaScript">
+        /*Fonction verifier formulaire*/
+        function verifForm()
+        {
+            if(document.getElementById('name').value !='' && document.getElementById('firstname').value!='' && document.getElementById('address').value !='' && document.getElementById('city').value != '' && document.getElementById('zip').value != '')
+            {
+                document.getElementById('bouton').disabled=false;
 
+            }
+        }
+
+    </script>
     <style>
 
         .buttonevac {

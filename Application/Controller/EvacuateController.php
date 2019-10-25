@@ -90,12 +90,14 @@ class EvacuateController extends Framework
 
             $json = json_decode(file_get_contents($file),true);
 
+            if(isset($_GET['id'])){
+
             $json['receptionStructures'][$_GET['id']]['capacity'] = $json['receptionStructures'][$_GET['id']]['capacity'] - $_GET['person']  ;
 
             $fp = fopen($file, 'w');
             fwrite($fp, json_encode($json));
             fclose($fp);
-
+            }
 
             $client = new GuzzleHttp\Client();
             $client->get('https://platform.clickatell.com/messages/http/send?apiKey=HHlPhOXSTcSJvQxv3KeuFg==&to=33'.$_GET['phone'].'&content=Un groupe de '.$_GET['person'].' personnes est en route vers votre refuge');

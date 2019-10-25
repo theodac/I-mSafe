@@ -47,7 +47,7 @@ require 'header.php';
         <div class="row column text-center">
 
             <br>
-            <a href="/I-mSafe" class="button  buttonevac"><img src="https://img.icons8.com/ios-glyphs/30/000000/home.png"></a>
+            <a href="/ImSafe" class="button  buttonevac"><img src="https://img.icons8.com/ios-glyphs/30/000000/home.png"></a>
 
 
         </div>
