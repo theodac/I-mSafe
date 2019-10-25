@@ -20,16 +20,9 @@ require 'header.php';
 
     <div class="row medium-uncollapse large-collapse">
         <div class="small-6 columns">
-            <h2>Où êtes-vous ? </h2>
+            <h5>Selectionnez votre point de rassemblement pour réserver vos places</h5>
         </div>
-        <div class="small-12 columns">
-            <div class="row">
-                <div class="large-12 columns">
-                    <input type="text" placeholder="Adresse" />
-                </div>
-            </div
 
-        </div>
 
         <?php
 
@@ -45,7 +38,7 @@ require 'header.php';
 
 
             <section class="block-list">
-                <header class="conf">Points de rassemblement a moins de 1 km</header>
+                <header class="conf"><h6>Points de rassemblement a moins de 1 km</h6></header>
                 <?php
                 foreach ($confinements as $conf) {
                     ?>
@@ -69,12 +62,13 @@ require 'header.php';
 </div>
 
 <div class="row medium-uncollapse large-collapse">
-    <div class="small-6 columns">
-    </div>
-    <div class="small-5 columns">
+    <div class="row column text-center">
+
         <br>
         <a href="/imSafe/Confinement/AbriConfOui" class="button buttonConf">Je suis en sécurité</a>
+
     </div>
+
 </div>
 
 

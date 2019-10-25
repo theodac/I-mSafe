@@ -25,13 +25,13 @@ require 'header.php';
                         <div class="medium-6 cell">
                             <br>
                             <label>Nom
-                                <input type="text" placeholder="Nom" name="name">
+                                <input type="text"  name="name">
                             </label>
                         </div>
                         <div class="medium-6 cell">
                             <br>
                             <label>Prénom
-                                <input type="text" placeholder="Prénom" name="firstname">
+                                <input type="text"  name="firstname">
                             </label>
                         </div>
                     </li>
@@ -39,12 +39,12 @@ require 'header.php';
                         <div class="medium-6 cell">
                             <br>
                             <label>Adresse
-                                <input type="text" placeholder="Adresse" name="address">
+                                <input type="text"  name="address">
                             </label>
                         </div> <div class="medium-6 cell">
                             <br>
                             <label>Ville
-                                <input type="text" placeholder="Vile" name="city">
+                                <input type="text"  name="city">
                             </label>
                         </div>
                     </li>
@@ -52,7 +52,7 @@ require 'header.php';
                         <div class="medium-6 cell">
                             <br>
                             <label>Code Postal
-                                <input type="text" placeholder="Code Postal" name="zip">
+                                <input type="text"  name="zip">
                             </label>
                         </div>
                     </li>
