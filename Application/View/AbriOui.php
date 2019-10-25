@@ -6,7 +6,20 @@ require 'header.php';
 
 <body>
 
-<div class="test" style="height: 10%"></div>
+<div class="test" style="height: 10%">
+
+
+    <div class="small-6 columns">
+        <br>
+        <a href="/I-mSafe" class="button  buttonevac"><img src="https://img.icons8.com/ios-glyphs/30/000000/home.png"></a>
+
+    </div>
+    <div class="small-6 columns">
+
+    </div>
+
+</div>
+
 
 
 
@@ -107,6 +120,9 @@ require 'header.php';
             </div>
         </div>
     </form>
+
+
+
 
     <div class="TEST" style="height: 37.5%"></div>
 

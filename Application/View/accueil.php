@@ -10,7 +10,12 @@ require 'header.php';
 ?>
 
 <body>
-<div class="test" style="height: 37.5%"></div>
+<div class="test" style="height: 37.5%">
+
+
+
+
+</div>
 <div class="test" style="height: 25%">
     <div class="row column text-center">
 
@@ -26,6 +31,9 @@ require 'header.php';
 
 
     </div>
+
+
+
 </div>
 </body>
 
