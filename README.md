@@ -3,11 +3,11 @@
 ## INSTALLATION DE L'APPLICATION
 
  Faire un git clone du projet : 
-*git clone https://github.com/theodac/I-mSafe.git*
+***git clone https://github.com/theodac/I-mSafe.git***
 
 ## INSTALLATION DES DEPENDANCES
 A la racine du projet, avec le terminal effectué un composer install :
-*Composer install*
+***Composer install***
 
 ## LANCEMENT DE L'APPLICATION
 Vous pouvez maintenant profiter de la web application.
