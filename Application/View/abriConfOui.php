@@ -6,7 +6,19 @@ require 'header.php';
 
 <body>
 
-<div class="test" style="height: 10%"></div>
+<div class="test" style="height: 10%">
+
+
+    <div class="small-6 columns">
+        <br>
+        <a href="/I-mSafe" class="button  buttonConf"><img src="https://img.icons8.com/ios-glyphs/30/000000/home.png"></a>
+
+    </div>
+    <div class="small-6 columns">
+
+    </div>
+
+</div>
 
 
 
@@ -77,6 +89,7 @@ require 'header.php';
                 <br>
                 <br>
                 <select  class="small-6 columns" name="nbrChild">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -91,6 +104,7 @@ require 'header.php';
             </div>
             <div class="small-6 columns">
                 <select  class="small-6 columns" name="nbrbaby">
+                    <option value="0">0</option>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>

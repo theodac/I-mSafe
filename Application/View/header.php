@@ -8,6 +8,7 @@
     <title>Safe Place</title>
     <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css">
     <link rel="stylesheet" href="../../public/style/style.css">
+
     <style>
 
         .buttonevac {
@@ -21,6 +22,8 @@
             background: #A3E0F9;
             font-size: 1.2rem;
         }
+
+
 
         h3 {
             font-size: 1.6rem;

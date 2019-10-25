@@ -32,14 +32,26 @@ require 'header.php';
                     <li><p>1 • Rester solidaire de son groupe</p></li>
                     <li><p>2 • Ne pas quitter le point de rassemblement sans
                             autorisation</p></li>
-                    <li><p>3 • Communiquer uniquement par sms</p></li>
-                    <li><p>4 • Écoutez la radio</p></li>
+                    <li><p>3 • Communiquer uniquement par SMS</p></li>
+                    <li><p>4 • Écoutez la radio - France Bleu Normandie : 105.7</p></li>
                     <li><p>5 • Respectez les consignes formulées par les autorités</p></li>
 
                 </ul>
             </section>
 
         </div>
+    </div>
+
+
+    <div class="row medium-uncollapse large-collapse">
+        <div class="row column text-center">
+
+            <br>
+            <a href="/I-mSafe" class="button  buttonevac"><img src="https://img.icons8.com/ios-glyphs/30/000000/home.png"></a>
+
+
+        </div>
+
     </div>
 </div>
 
