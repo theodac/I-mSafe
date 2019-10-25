@@ -86,7 +86,7 @@
 
         .block-list li {
             position: relative;
-            border-bottom: 1px solid #e6e6e6;
+
         }
 
 
