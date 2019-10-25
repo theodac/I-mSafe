@@ -2,7 +2,7 @@
 
 ## INSTALLATION DE L'APPLICATION
 
- Faire un git clone du projet
+ Faire un git clone du projet : 
 *git clone https://github.com/theodac/I-mSafe.git*
 
 ## INSTALLATION DES DEPENDANCES
