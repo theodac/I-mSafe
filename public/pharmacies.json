@@ -1,0 +1,337 @@
+[
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie Lafayette",
+    "address": "87 rue Lafayette",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.089280,
+        49.432390
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "La Grande Pharmacie",
+    "address": "Place de la Verrerie",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.083380,
+        49.431180
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie Lafayette du théâtre",
+    "address": "91 rue general leclerc",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.091310,
+        49.439650
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Duvey-Guivarch",
+    "address": "146 rue Saint-Sever",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.086610,
+        49.431330
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie/Orthopedie Mutualiste",
+    "address": "30 avenue de bretagne",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.085400,
+        49.434040
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie des Emmurees",
+    "address": "Rue saint-sever",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.088220,
+        49.433390
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Grande Pharmacie du centre",
+    "address": "29 place de la cathédrale",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.093710,
+        49.440570
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "pharmacies",
+    "zip": 76000,
+    "name": "Pharmacie Saint Marc",
+    "address": "1 rue Alsace Lorraine",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "pharmacy",
+      "dispensing": "yes",
+      "coordinates": [
+        1.100270,
+        49.438370
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "commissariat",
+    "zip": 76000,
+    "name": "Police Nationale",
+    "address": "44 Boulevard de L'Yser",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "police",
+      "dispensing": "yes",
+      "coordinates": [
+        1.098954,
+        49.448553
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "commissariat",
+    "zip": 76000,
+    "name": "Hotel de Police",
+    "address": "9 rue Brisout de Barneville",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "police",
+      "dispensing": "yes",
+      "coordinates": [
+        1.080304,
+        49.434198
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+  },
+  {
+    "datasetid": "commissariat",
+    "zip": 76000,
+    "name": "Police Aux Frontières de L'agglomération Rouennaise",
+    "address": "Quai du havre",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "police",
+      "dispensing": "yes",
+      "coordinates": [
+        1.083658,
+        49.440453
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "commissariat",
+    "zip": 76000,
+    "name": "Police Nationale",
+    "address": "230 rue Garibaldi",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "police",
+      "dispensing": "yes",
+      "coordinates": [
+        1.091144,
+        49.415984
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "commissariat",
+    "zip": 76000,
+    "name": "Gendarmerie Nationale",
+    "address": "2 rue du général Sarrail",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "police",
+      "dispensing": "yes",
+      "coordinates": [
+        1.104657,
+        49.440900
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "commissariat",
+    "zip": 76000,
+    "name": "Police Municipal",
+    "address": "40 rue orbe",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "police",
+      "dispensing": "yes",
+      "coordinates": [
+        1.105228,
+        49.442981
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "hopitaux",
+    "zip": 76000,
+    "name": "CHU Hôpitaux de Rouen Service des Urgences",
+    "address": "1 Rue de Germont",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "hopitaux",
+      "dispensing": "yes",
+      "coordinates": [
+        1.108711,
+        49.440080
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "hopitaux",
+    "zip": 76000,
+    "name": "Centre Hospitalier Universitaire de Rouen",
+    "address": "37 Boulevard Gambetta",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "hopitaux",
+      "dispensing": "yes",
+      "coordinates": [
+        1.111642,
+        49.438180
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "hopitaux",
+    "zip": 76000,
+    "name": "Centre Henri Becquerel",
+    "address": "1 Rue d'Amiens",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "hopitaux",
+      "dispensing": "yes",
+      "coordinates": [
+        1.092472,
+        49.439185
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "hopitaux",
+    "zip": 76000,
+    "name": "Clinique de l'Europe",
+    "address": "73 Boulevard de l'Europe",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "hopitaux",
+      "dispensing": "yes",
+      "coordinates": [
+        1.086562,
+        49.425966
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  },
+  {
+    "datasetid": "hopitaux",
+    "zip": 76000,
+    "name": "CHU de Rouen -ERFPS, espace régional de formation des professions de santé",
+    "address": "14 Rue du Professeur W-M Stewart",
+    "town": "Rouen",
+    "fields": {
+      "building": "yes",
+      "amenity": "hopitaux",
+      "dispensing": "yes",
+      "coordinates": [
+        1.108873,
+        49.437364
+      ],
+      "record_timestamp": "2017-12-31T14:21:21.986+01:00"
+    }
+
+  }
+
+
+]

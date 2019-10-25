@@ -1,0 +1,77 @@
+{
+    "receptionStructures": {
+        "0": {
+            "name": "Square Verdrel",
+            "capacity": 1000,
+            "zip_code": "76000",
+            "phone": "606785294",
+            "coordinates": {
+                "lat": 49.4449368,
+                "lng": 1.0909456
+            }
+        },
+        "1": {
+            "name": "Église Sainte Jeanne d'Arc",
+            "capacity": 400,
+            "zip_code": "76000",
+            "phone": "667720419",
+            "coordinates": {
+                "lat": 49.4427594,
+                "lng": 1.0855338
+            }
+        },
+        "2": {
+            "name": "Jardin de l'Hôtel de Ville",
+            "capacity": 400,
+            "zip_code": "76000",
+            "phone": "667720419",
+            "coordinates": {
+                "lat": 49.4429103,
+                "lng": 1.0987368
+            }
+        },
+        "3": {
+            "name": "Lycée Gustave Flaubert",
+            "capacity": 1500,
+            "zip_code": "76044",
+            "phone": "667720419",
+            "coordinates": {
+                "lat": 49.4510657,
+                "lng": 1.1198701
+            }
+        },
+        "4": {
+            "name": "Place du Boulingrin",
+            "capacity": 1200,
+            "zip_code": "76000",
+            "phone": "667720419",
+            "coordinates": {
+                "lat": 49.4471593,
+                "lng": 1.1042486
+            }
+        },
+        "5": {
+            "name": "Place Saint-Hilaire",
+            "capacity": 500,
+            "zip_code": "76000",
+            "phone": "667720419",
+            "coordinates": {
+                "lat": 49.4421162,
+                "lng": 1.1110661
+            }
+        },
+        "6": {
+            "name": "Complexe Sportif Antoine de Saint-Exupery",
+            "capacity": 1500,
+            "zip_code": "76000",
+            "phone": "667720419",
+            "coordinates": {
+                "lat": 49.4395783,
+                "lng": 1.1137092
+            }
+        }
+    }
+}
+
+
+

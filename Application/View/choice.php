@@ -10,6 +10,14 @@
 <h2>Page choix Evacuation ou Confinement</h2>
 
 
-<button>Evacuation</button>
-<br>
-<button>Confinement</button>
+
+<h3>Lieux de rassemblement près de vous</h3>
+<ul>
+    <?php
+    foreach ($pharmacy as $pharma){
+    ?>
+    <li><?= $pharma->name ?> , <br> Adresse : <?= $pharma->addressOrigin?> <br> <a href="?person=5">Click here to text us!</a> <a href="http://www.google.com/maps/place/<?= $pharma->lat ?>,<?= $pharma->lng ?>">M'y Rendre</a></li>
+    <?php
+    }
+    ?>
+</ul>
