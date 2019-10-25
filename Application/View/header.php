@@ -26,6 +26,10 @@
             font-size: 1.6rem;
         }
 
+        h6 {
+            font-size: 0.8rem;
+        }
+
         .block-list ul {
             margin-left: 0;
             margin-bottom: 0;
